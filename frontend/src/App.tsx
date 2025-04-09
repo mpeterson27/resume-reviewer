@@ -3,6 +3,7 @@ import UploadForm from "./components/UploadForm";
 import FeedbackDisplay from "./components/FeedbackDisplay";
 import "./App.css";
 import React from "react";
+import CoverLetterForm from "./components/CoverLetterForm";
 
 const ResumePage = ({ setFeedback, feedback }: any) => (
   <>
@@ -20,12 +21,7 @@ const HomePage = () => (
   </>
 );
 
-const CoverLetterPage = () => (
-  <>
-    <h1>Cover Letter Creator (Coming Soon)</h1>
-    <p>This feature is in development. Stay tuned!</p>
-  </>
-);
+const CoverLetterPage = () => <CoverLetterForm />;
 
 function App() {
   const [feedback, setFeedback] = React.useState(null);

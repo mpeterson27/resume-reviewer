@@ -2,6 +2,7 @@ import express from "express";
 import dotenv from "dotenv";
 import reviewRoutes from "./routes/review";
 import cors from "cors";
+import coverLetterRoutes from "./routes/coverLetter";
 
 dotenv.config();
 
@@ -15,6 +16,7 @@ app.use(express.urlencoded({ extended: true }));
 // Routes
 app.use(cors());
 app.use("/api/review", reviewRoutes);
+app.use("/api/cover-letter", coverLetterRoutes);
 
 app.get("/", (_req, res) => {
   res.send("Resume Reviewer API is running.");
