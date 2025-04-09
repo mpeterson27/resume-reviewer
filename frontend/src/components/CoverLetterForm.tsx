@@ -61,7 +61,7 @@ const CoverLetterForm: React.FC = () => {
         onChange={(e) => e.target.files && setResume(e.target.files[0])}
       /><br /><br />
 
-      <label>Job Description</label><br />
+      <label>Job Description (Paste from Job Posting)</label><br />
       <textarea
         value={jobDescription}
         onChange={(e) => setJobDescription(e.target.value)}
@@ -75,6 +75,7 @@ const CoverLetterForm: React.FC = () => {
         onChange={(e) => setNotes(e.target.value)}
         rows={4}
         style={{ width: "100%" }}
+        placeholder="e.g. Please emphasize leadership skills or tailor to a consulting role, etc."
       /><br /><br />
 
       <button type="submit" disabled={loading || !resume || !jobDescription}>
@@ -83,7 +84,7 @@ const CoverLetterForm: React.FC = () => {
 
       {output && (
         <div style={{ marginTop: "2rem" }}>
-          <h3>AI-Generated Cover Letter</h3>
+          <h3>Cover Letter</h3>
           <div
             style={{
               backgroundColor: "#f4f4f4",

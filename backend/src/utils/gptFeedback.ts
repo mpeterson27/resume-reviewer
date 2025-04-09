@@ -22,7 +22,7 @@ Analyze the following resume and return ONLY a valid JSON object, with this **ex
   "example_changes": ["...", "..."]
 }
 
-Do not include any explanations or notes outside the JSON.
+Do not include any explanations or notes outside the JSON. Do not provide feedback on formatting. 
 
 Resume:
 ${text}
