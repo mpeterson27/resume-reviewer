@@ -1,27 +1,52 @@
-// src/App.tsx
-import React, { useState } from "react";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import UploadForm from "./components/UploadForm";
 import FeedbackDisplay from "./components/FeedbackDisplay";
 import "./App.css";
+import React from "react";
 
-interface ResumeFeedback {
-  summary: string;
-  strengths: string[];
-  areas_for_improvement: string[];
-  recommendations: string[];
-  example_changes: string[];
-}
+const ResumePage = ({ setFeedback, feedback }: any) => (
+  <>
+    <h1>Resume Reviewer</h1>
+    <UploadForm onFeedback={setFeedback} />
+    <FeedbackDisplay feedback={feedback} />
+  </>
+);
 
-const App = () => {
-  const [feedback, setFeedback] = useState<ResumeFeedback | null>(null);
+const HomePage = () => (
+  <>
+    <h1>Welcome</h1>
+    <p>This app lets you upload your resume and get AI-powered feedback.</p>
+    <p>Use the nav above to switch between features.</p>
+  </>
+);
+
+const CoverLetterPage = () => (
+  <>
+    <h1>Cover Letter Creator (Coming Soon)</h1>
+    <p>This feature is in development. Stay tuned!</p>
+  </>
+);
+
+function App() {
+  const [feedback, setFeedback] = React.useState(null);
 
   return (
-    <div className="container">
-      <h1>Resume Reviewer</h1>
-      <UploadForm onFeedback={setFeedback} />
-      <FeedbackDisplay feedback={feedback} />
-    </div>
-  );  
-};
+    <Router>
+      <div className="container">
+        <nav style={{ marginBottom: "2rem" }}>
+          <Link to="/" style={{ marginRight: "1rem" }}>Home</Link>
+          <Link to="/resume-reviewer" style={{ marginRight: "1rem" }}>Resume Reviewer</Link>
+          <Link to="/cover-letter">Cover Letter Creator</Link>
+        </nav>
+
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/resume-reviewer" element={<ResumePage setFeedback={setFeedback} feedback={feedback} />} />
+          <Route path="/cover-letter" element={<CoverLetterPage />} />
+        </Routes>
+      </div>
+    </Router>
+  );
+}
 
 export default App;
