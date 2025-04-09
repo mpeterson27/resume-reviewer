@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/resume-reviewer/static/css/main.e6c13ad2.css",
+    "main.js": "/resume-reviewer/static/js/main.3026f066.js",
+    "index.html": "/resume-reviewer/index.html",
+    "main.e6c13ad2.css.map": "/resume-reviewer/static/css/main.e6c13ad2.css.map",
+    "main.3026f066.js.map": "/resume-reviewer/static/js/main.3026f066.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.3026f066.js"
+  ]
+}
