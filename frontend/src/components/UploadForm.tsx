@@ -23,7 +23,7 @@ const UploadForm: React.FC<UploadFormProps> = ({ onFeedback }) => {
 
     setLoading(true);
     try {
-      const response = await fetch("https://resume-reviewer-production.up.railway.app/", {
+      const response = await fetch("https://resume-reviewer-production.up.railway.app/api/review", {
         method: "POST",
         body: formData,
       });
