@@ -30,7 +30,10 @@ Analyze the following resume and return ONLY a valid JSON object, with this **ex
   "example_changes": ["...", "..."]
 }
 
-Do not include any explanations or notes outside the JSON. Do not provide feedback on formatting. 
+DO NOT include anything outside the JSON.
+DO NOT include explanations, markdown, or commentary.
+Just the raw JSON object as described.
+Do not provide feedback on formatting. 
 
 Resume:
 ${text}
