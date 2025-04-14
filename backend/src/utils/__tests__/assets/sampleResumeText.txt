@@ -1,0 +1,29 @@
+MARCUS PETERSON
+Denver, Colorado | 352-584-0573 | marcuslukepeterson@gmail.com | linkedin.com/in/mpeterson27/
+
+EDUCATION
+Fordham University, Gabelli School of Business – MS Global Finance, GPA 3.9
+University of Central Florida – BSBA Finance
+
+Relevant Coursework: Financial Modeling, Corporate Finance, Financial Data Analysis with Python, Machine Learning for Finance
+
+PROFESSIONAL EXPERIENCE
+CBIZ MHM, LLC – Manager, Data Analytics Center of Excellence
+• Created automation tools and policies for national analytics efforts
+• Managed servers, help desks, and solution teams
+• Developed CARES Act automation and client intake procedures
+
+JP Morgan Chase – Relationship Banker
+• Managed 400+ clients and $30M in assets
+• Originated new financial products
+• Focused on compliance and customer solutions
+
+PROJECTS
+Office Depot SWOT + Financial Plan – Led winning project team
+Strategic Management Competition – School-wide real-world business competition
+
+SKILLS & CERTIFICATIONS
+• Python, LLM/NLPs, React.js, Power BI, SQL, Excel
+• Azure ML, Computer Vision, Alteryx (Core, Advanced, Server Admin)
+• FINRA Series 6/63, NY Life & Variable Annuities, SIE
+• Professional Scrum Master I
