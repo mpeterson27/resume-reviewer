@@ -25,9 +25,8 @@ router.post("/", upload.single("file"), async (req: Request, res: Response): Pro
     const fileText = await extractTextFromFile(filePath, file.mimetype);
 
     // Clean up temp file
+    const feedback = await getResumeFeedback(fileText, filePath);
     fs.unlinkSync(filePath);
-
-    const feedback = await getResumeFeedback(fileText);
 
     res.json(feedback);
   } catch (error) {

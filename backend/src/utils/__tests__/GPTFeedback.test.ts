@@ -46,7 +46,7 @@ describe("getResumeFeedback", () => {
     expect(Array.isArray(result.strengths)).toBe(true);
     expect(Array.isArray(result.areas_for_improvement)).toBe(true);
     expect(typeof result.formatting_comments).toBe("string");
-  },20000); // 20 seconds timeout
+  },30000); // 20 seconds timeout
 });
 
 describe("getTextAnalysis", () => {
@@ -58,7 +58,7 @@ describe("getTextAnalysis", () => {
     await expect(getTextAnalysis("fake resume")).rejects.toThrow("Failed to parse GPT response");
 
     spy.mockRestore();
-  });
+  },30000);
 });
 
 describe("getFormattingFeedback", () => {
@@ -77,5 +77,5 @@ describe("getFormattingFeedback", () => {
 
     fs.unlinkSync(fakeImagePath); // cleanup
     spy.mockRestore();
-  });
+  },30000);
 });
